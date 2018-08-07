@@ -1,0 +1,39 @@
+.backgroundImage{
+    background-image: url(../images/connectwork.png);
+}   
+
+.headbox{
+    background-color: orange;
+    color: white;
+    height: 10vh;
+    font-size: 50px;
+}
+
+.mainContent{
+    background-color: rgb(247, 212, 167);
+    color: green;
+}
+
+.gameStart{
+    height: 10vh;
+}
+.randomBox{
+    background-color: rgb(46, 177, 57);
+}
+.winLossBox{
+    background-color: aqua;
+}
+
+img{
+    width:150px;
+    height:150px
+}
+.scoreIs{
+    background-color: teal;
+    color: white;
+}
+.scoreCounter{
+    background-color: teal;
+    color: white;
+    height: 10vh;
+}

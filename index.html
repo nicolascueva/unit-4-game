@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CrystalCollector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body class="backgroundImage">
+    <!--head-->
+    <div class="container">
+        <div class="row headbox text-center">
+            <div class="col my-auto">
+                CrystalsCollector
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row mainContent text-center">
+            <div class="col my-auto">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+                    total score.</p>
+                <p>You win the game by matching your total score to the random number, you lose the game if your total score
+                    goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row gameStart">
+            <div class="col-6 text-center randomBox">
+                1 of 2
+            </div>
+            <div class="col-6 text-center winLossBox">
+                <p>Wins
+                    <span>0</span>
+                </p>
+                <p>Losses
+                    <span>0</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-3">
+                <img src="assets/images/red-crystal.jpg">
+            </div>
+            <div class="col-3">
+                <img src="assets/images/blue-crystal.jpg">
+            </div>
+            <div class="col-3">
+                <img src="assets/images/yellow-crystal.jpg">
+            </div>
+            <div class="col-3">
+                <img src="assets/images/green-crystal.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center scoreIs">
+            <div class="col">
+                Your Total Score Is
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row text-center scoreCounter">
+            <div class="col">
+                0
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
