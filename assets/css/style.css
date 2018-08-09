@@ -12,10 +12,11 @@
 .mainContent{
     background-color: rgb(247, 212, 167);
     color: green;
+    height:30vh;
 }
 
 .gameStart{
-    height: 10vh;
+    height: 15vh;
 }
 .randomBox{
     background-color: rgb(46, 177, 57);
@@ -31,6 +32,7 @@ img{
 .scoreIs{
     background-color: teal;
     color: white;
+    height: 5vh;
 }
 .scoreCounter{
     background-color: teal;

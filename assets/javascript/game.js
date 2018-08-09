@@ -1,38 +1,40 @@
-var computerScore = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
-var userScore = 0;
-var wins = 0;
-var losses = 0;
-var redGemValue = Math.floor(Math.random() * 12) + 1;
-var blueGemValue = Math.floor(Math.random() * 12) + 1;
-var yellowGemValue = Math.floor(Math.random() * 12) + 1;
-var greenGemValue = Math.floor(Math.random() * 12) + 1;
-var userTotal = userScore;
-
-
 $(document).ready(function () {
+    //////// VARIABLES
+    var computerScore = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
+    var userScore = 0;
+    var wins = 0;
+    var losses = 0;
+    var redGemValue = Math.floor(Math.random() * 12) + 1;
+    var blueGemValue = Math.floor(Math.random() * 12) + 1;
+    var yellowGemValue = Math.floor(Math.random() * 12) + 1;
+    var greenGemValue = Math.floor(Math.random() * 12) + 1;
+    var youWin = "You Win!";
+    var youLose = "You Lose!";
 
+
+
+    ////// Values at start of page load
     $("#computerScore").html(computerScore);
     $("#wins").html(wins);
     $("#losses").html(losses);
     $("#userScore").html(userScore);
-
+    ////// win/ lose functions
     function gameWin() {
-        //alert("You win the game!");
+        $("#endNotification").html(youWin);
         wins++;
         $("#wins").text(wins);
         reset();
     }
 
     function gameLose() {
-        // alert("Loser!");
+        $("#endNotification").html(youLose);
         losses++;
         $("#losses").text(losses);
         reset();
     }
-
+    ////////// Reset game function
     function reset() {
         computerScore = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
-        //console.log(Random)
         $("#computerScore").html(computerScore);
         redGemValue = Math.floor(Math.random() * 12) + 1;
         blueGemValue = Math.floor(Math.random() * 12) + 1;
@@ -44,7 +46,7 @@ $(document).ready(function () {
 
 
 
-    ///////////////// gem values
+    ///////////////// gem values+ if statements
     $("#redGemValue").click(function () {
         userScore = userScore + redGemValue;
         $("#userScore").html(userScore);
@@ -106,17 +108,5 @@ $(document).ready(function () {
 
     });
     ////////////////gem values
-
-
-    ////// can this outside work?????
-    /*if (userTotal === computerScore) {
-        console.log("you win");
-        wins++;
-    }
-    if (userTotal > computerScore) {
-        console.log("you lose");
-        losses++;
-    }*/
-
 
 });
